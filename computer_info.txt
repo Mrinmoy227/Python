@@ -1,0 +1,11 @@
+
+Coding is basically the computer language used to develop apps, websites, and software.
+
+Without coding, technologies like Facebook, smartphones, and web browsers would not exist.
+Code tells the computer what to do.
+
+Computers only understand binary signals:
+1 = ON
+0 = OFF
+
+Programming languages were created to make coding easier for humans.
