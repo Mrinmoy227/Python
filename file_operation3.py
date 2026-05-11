@@ -20,3 +20,12 @@ for line in repeated:
         duplicate.add(line)
 repeated.close
 updated.close
+
+import os
+print('Checking if the file exist or not')
+os.remove("codingal.txt")
+
+if os.path.exists("codingal.txt"):
+    print(exit)
+else:
+    print("it does not exist")
