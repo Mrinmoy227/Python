@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+</head>
+<body>
+    <h1>Add your To-Do List here</h1>
+    <form id="myform">
+        <input id="myinput"  type="text">
+        <Button>Add</Button>
+
+    </form>
+    <h3>To-Do List</h3>
+    <ul id="myitems"></ul>
+    <script>
+
+//Find the form, input box and list
+ var myform=document.getElementById("myform")
+ var myinput=document.getElementById("myinput")
+ var myitem=document.getElementById("myitems")
+
+
+ //Run when the Add button is clicked
+ myform.addEventListener("submit",function(event){
+    event.preventDefault();
+    createItem(myinput.value);
+ })
+function createItem(InputItems){
+    myitem.insertAdjacentHTML(
+     "beforeend",
+     `<li>${InputItems}</li>`
+    )
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+</html>
