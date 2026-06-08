@@ -1,0 +1,30 @@
+<h1>Shopping List</h1>
+
+<input type="text" id="itemInput" placeholder="Enter an item">
+<button id="addBtn">Add Item</button>
+
+<ul id="shoppingList"></ul>
+<script>
+    const input = document.getElementById("itemInput");
+const addBtn = document.getElementById("addBtn");
+const shoppingList = document.getElementById("shoppingList");
+
+addBtn.addEventListener("click", () => {
+  const itemText = input.value.trim();
+
+  if (itemText === "") {
+    alert("Please enter an item!");
+    return;
+  }
+
+  const li = document.createElement("li");
+  li.textContent = itemText;
+
+  li.addEventListener("click", () => {
+    li.remove();
+  });
+
+  shoppingList.appendChild(li);
+  input.value = "";
+});
+</script>
